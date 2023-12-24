@@ -1,0 +1,6 @@
+aubio==0.4.9
+librosa==0.10.1
+matplotlib==3.8.2
+numpy==1.26.2
+pyaudio==0.2.14
+termcolor==2.4.0
