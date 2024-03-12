@@ -76,7 +76,7 @@ stream = p.open(format=FORMAT,
 try:
     while True:
         # Read audio data from the stream
-        audio_data = np.frombuffer(stream.read(CHUNK), dtype=np.float32)
+        audio_data = np.frombuffer(stream.read(CHUNK, exception_on_overflow = False), dtype=np.float32)
 
         # Calculate features
         volume = calculate_volume(audio_data)
